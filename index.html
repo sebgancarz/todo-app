@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- styles -->
+		<link rel="stylesheet" href="style.css" />
+		<title>ToDo App</title>
+	</head>
+	<body>
+		<h1>ToDo App</h1>
+		<section class="add-task">
+			<h2>Add new task:</h2>
+			<form>
+				<label for="new-task"
+					>NewTask name: <input type="text" name="new-task" id="new-task"
+				/></label>
+				<label for="new-date"
+					>Date: <input type="date" name="new-date" id="new-date"
+				/></label>
+				<label for="priority"
+					>Priority: <input type="checkbox" name="priority" id="priority"
+				/></label>
+				<input type="submit" value="Submit" id="submit" />
+			</form>
+		</section>
+		<section class="todo-tasks">
+			<h2>To Do Tasks:</h2>
+			<ul class="todo-list"></ul>
+		</section>
+		<section class="finished-tasks">
+			<h2>Finished tasks:</h2>
+			<ul class="finshed-list"></ul>
+		</section>
+		<!-- scripts -->
+		<script src="app.js"></script>
+	</body>
+</html>
